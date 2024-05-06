@@ -80,7 +80,7 @@ function nextQuestion() {
       messageEl.textContent = "Good job! CUTIE PATOOTIE!\nWait 5 seconds";
       //wait for 5 seconds
       setTimeout(function () {
-        window.location.href = "../book/index.html";
+        window.location.href = "https://the-8-letters.github.io/book/";
       }, 5000);
     } else {
       messageEl.textContent = `You answered ${score} out of ${questions.length} questions correctly.`;
