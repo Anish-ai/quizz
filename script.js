@@ -26,7 +26,21 @@ const questions = [
     options: ["Beach", "Mountains", "Snowy place", "Stay home"],
     answer: 2,
   },
-
+  {
+    question: "How many crushes I had till now ?",
+    options: ["1", "2", "3", "4"],
+    answer: 3,
+  },
+  {
+    question: "Have I ever lied to you ?",
+    options: ["Yes", "No", "Maybe", "Can't say"],
+    answer: 0,
+  },
+  {
+    question: "Why don't I call you ?",
+    options: ["Don't want to", "Am insecure of my voice and accent", "Don't have balance", "i want to but don't know what to talk about"],
+    answer: 3,
+  }
   // Add more questions here
 ];
 
@@ -55,6 +69,18 @@ function checkAnswer(selectedOption) {
     } else if (currentQuestion === 1){
       score++;
       messageEl.textContent = "hehe ofcourse 😘";
+      messageEl.classList.add("correct");
+    } else if (currentQuestion === 5){
+      score++;
+      messageEl.textContent = "hehe 👀";
+      messageEl.classList.add("correct");
+    } else if (currentQuestion === 6){
+      score++;
+      messageEl.textContent = "hn kafi baar 😅";
+      messageEl.classList.add("correct");
+    } else if (currentQuestion === 7){
+      score++;
+      messageEl.textContent = "hehe 😅";
       messageEl.classList.add("correct");
     }
     else {
